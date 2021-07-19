@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FlyingBird : MonoBehaviour
 {
+    public Vector3 BirdPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,6 @@ public class FlyingBird : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position += BirdPosition;
     }
 }
